@@ -103,6 +103,9 @@ on init
     chmod 0660 /sys/fs/cgroup/memory/bg/tasks
 
 on post-fs
+    # USB 2.0 Force Fast Charge
+    chown system system /sys/module/oplus_chg/parameters/force_fast_charge
+    chown system system /sys/module/oplus_chg/parameters/ffc_val
 
 on early-boot
     # set RLIMIT_MEMLOCK to 64MB
