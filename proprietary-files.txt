@@ -197,6 +197,9 @@ vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.1.so
 vendor/lib64/vendor.qti.hardware.fm@1.0.so
 
 # Camera
+my_product/lib64/libAPSClient-jni.so:system_ext/lib64/libAPSClient-jni.so
+my_product/product_overlay/framework/com.oplus.camera.unit.sdk.adapter.jar:system_ext/framework/com.oplus.camera.unit.sdk.adapter.jar
+my_product/product_overlay/framework/com.oplus.camera.unit.sdk.jar:system_ext/framework/com.oplus.camera.unit.sdk.jar
 odm/bin/hw/vendor.oplus.hardware.cammidasservice-V1-service
 odm/bin/occe_create
 odm/etc/camera/AiFace.json
@@ -554,8 +557,10 @@ odm/etc/camera/gesture/tt_hand_gesture_v11.1.model
 odm/etc/camera/gesture/tt_hand_kp_v6.0.model
 odm/etc/camera/gesture/tt_hand_lr_v3.0.model
 odm/etc/camera/libiceainr_model.dlc
+odm/etc/camera/license_release_fdc.lic
 odm/etc/camera/media_profiles.xml
 odm/etc/camera/model/DocDetectV15.xbin
+odm/etc/camera/model/license.lic
 odm/etc/camera/model_fdc.data
 odm/etc/camera/mtStereoParams.bin
 odm/etc/camera/mwStereoParams.bin
@@ -837,6 +842,7 @@ odm/etc/camera/pfb_bin/snapYUV420sp2RGBBinary.bin
 odm/etc/camera/pfb_bin/snapseparateYUV2RGBBinary.bin
 odm/etc/camera/selfbokehParam.json
 odm/etc/camera/selfbokehmodel.bin
+odm/etc/camera/singleblur/license_release.license
 odm/etc/camera/singleblur/personseg.bin
 odm/etc/camera/singleblur/preview_seg.json
 odm/etc/camera/spectrum_test_data_golden
@@ -1037,6 +1043,7 @@ odm/lib64/libcalculator_htp.so
 odm/lib64/libcreatebin.so
 odm/lib64/libcustomer_halalgovisual.so
 odm/lib64/libcvface_api.so
+odm/lib64/libdlrmsc.so
 odm/lib64/libdualcam_optical_zoom_control.so
 odm/lib64/libdualcam_video_optical_zoom.so
 odm/lib64/libeffect_custom.so
@@ -1075,7 +1082,17 @@ odm/lib64/vendor.oplus.hardware.cameraextension-V1-service-impl.so
 odm/lib64/vendor.oplus.hardware.cammidasservice-V1-ndk.so
 odm/lib64/vendor.oplus.hardware.sendextcamcmd-V1-ndk.so
 odm/lib64/vendor.oplus.hardware.sendextcamcmd-V1-service-impl.so
+system/framework/oplus-support-wrapper.jar
 system/lib64/libziparchive.so:odm/lib64/libziparchive_odm.so;FIX_SONAME
+system_ext/framework/androidx.camera.extensions.impl.jar
+system_ext/lib64/libAPSClient-cmd-jni-extension.oplus.so:system_ext/lib64/libAPSClient-cmd-jni.so;FIX_SONAME
+system_ext/lib64/libHeifEncoderWrapper.so
+system_ext/lib64/libHeifWinBufExchg-jni.so
+system_ext/lib64/libNativeWinBuffExchange.so
+system_ext/lib64/liboplusHeifDecoderImpl.so
+system_ext/lib64/liboplusheifwriter.so
+system_ext/lib64/libpenguin.so
+system_ext/lib64/vendor.oplus.hardware.cameraMDM@1.0.so
 vendor/bin/hw/vendor.qti.camera.provider-service_64
 vendor/etc/init/vendor.qti.camera.provider-service_64.rc
 vendor/etc/vintf/manifest/vendor.qti.camera.aon-impl-1.3.xml
@@ -1234,6 +1251,7 @@ vendor/lib64/libmctfengine_stub.so
 vendor/lib64/libmfGhostDetection.so
 vendor/lib64/libmfec.so
 vendor/lib64/libmidasserviceintf_aidl.so
+vendor/lib64/libmidasserviceintf.so
 vendor/lib64/libmmcamera_bestats.so
 vendor/lib64/libmmcamera_cac3.so
 vendor/lib64/libmmcamera_lscv35.so
@@ -1258,6 +1276,7 @@ vendor/lib64/libthreadutils.so
 vendor/lib64/libubifocus.so
 vendor/lib64/libvideoml.so
 vendor/lib64/vendor.oplus.hardware.cameraextension-V1-ndk.so
+vendor/lib64/vendor.oplus.hardware.cammidasservice@1.0.so
 vendor/lib64/vendor.oplus.hardware.cammidasservice-V1-ndk.so;MODULE_SUFFIX=_vendor
 vendor/lib64/vendor.oplus.hardware.commondcs-V1-ndk_platform.so
 vendor/lib64/vendor.oplus.hardware.sendextcamcmd-V1-ndk.so;MODULE_SUFFIX=_vendor
@@ -2053,7 +2072,9 @@ odm/lib64/libosenseaidlhalclient.so
 odm/bin/hw/vendor-oplus-hardware-performance-V1-service
 odm/etc/init/vendor-oplus-hardware-performance-V1-service.rc
 odm/etc/vintf/manifest/manifest_performance_aidl.xml
+odm/lib64/liboplus-uah-client.so
 odm/lib64/vendor.oplus.hardware.performance-V1-ndk.so
+odm/lib64/vendor.oplus.hardware.urcc-V1-ndk.so
 vendor/lib64/vendor.oplus.hardware.performance-V1-ndk.so;MODULE_SUFFIX=_vendor
 
 # OPLUS Project

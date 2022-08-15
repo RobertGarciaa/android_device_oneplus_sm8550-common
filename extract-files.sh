@@ -119,6 +119,14 @@ function blob_fixup() {
             [ "$2" = "" ] && return 0
             echo "pipe2: 1" >> "${2}"
             ;;
+        system_ext/etc/camera/mtCalibrationCfg.xml)
+            [ "$2" = "" ] && return 0
+            sed -i "s/-----/--/" "${2}"
+            ;;
+        system_ext/etc/camera/mwCalibrationCfg.xml)
+            [ "$2" = "" ] && return 0
+            sed -i "s/-----/--/" "${2}"
+            ;;
         *)
             return 1
             ;;

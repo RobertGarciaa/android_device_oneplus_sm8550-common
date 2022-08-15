@@ -65,6 +65,10 @@ ro.bluetooth.a2dp_offload.supported=true
 # Camera
 persist.vendor.camera.privapp.list=org.lineageos.aperture,com.oplus.camera
 vendor.camera.aux.packageexcludelist=org.telegram.messenger,org.thunderdog.challegram,us.zoom.videomeetings
+vendor.camera.algo.jpeghwencode=0
+vendor.camera.aux.packagelist=com.oplus.camera
+ro.vendor.oplus.camera.isSupportExplorer=0
+ro.camera.enableCamera1MaxZsl=1
 
 # Chipset
 ro.soc.manufacturer=QTI
