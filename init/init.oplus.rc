@@ -8,7 +8,16 @@ on fs
     # Update touchpanel firmware in case we ship newer firmware in /odm
     write /proc/touchpanel/tp_fw_update 0
 
+    # Camera
+    mkdir /mnt/vendor/dsp 0770 root root
+    copy /vendor/dsp/cdsp/fastrpc_shell_3 /mnt/vendor/dsp/fastrpc_shell_3
+    chmod 0644 /mnt/vendor/dsp/fastrpc_shell_3
+    mount none /mnt/vendor/dsp/fastrpc_shell_3 /vendor/dsp/cdsp/fastrpc_shell_3 bind
+
 on boot
+    # Camera
+    chown cameraserver cameraserver /sys/kernel/ois_control/dump_registers
+
     # Display
     chown system system /dev/oplus_display
     chown system system /sys/kernel/oplus_display/dimlayer_bl_en
@@ -27,6 +36,16 @@ on post-fs-data
     chmod 0777 /data/vendor/mmdump
     mkdir /data/vendor/mmdump/adsp 0777 system system
     chmod 0777 /data/vendor/mmdump/adsp
+
+    # Camera
+    chown cameraserver cameraserver /mnt/vendor/persist/camera/dual_calibration/stereoParams.bin
+    chown cameraserver cameraserver /mnt/vendor/persist/camera/front_dual_calibration/stereoParams.bin
+    chmod 0666 /mnt/vendor/persist/camera/dual_calibration/stereoParams.bin
+    chmod 0666 /mnt/vendor/persist/camera/front_dual_calibration/stereoParams.bin
+    chown cameraserver cameraserver /mnt/vendor/persist/camera/spectrum_cali_data
+    chown cameraserver cameraserver /mnt/vendor/persist/camera/spectrum_test_data
+    chmod 0666 /mnt/vendor/persist/camera/spectrum_cali_data
+    chmod 0666 /mnt/vendor/persist/camera/spectrum_test_data
 
 on property:ro.boot.prjname=*
     # Display

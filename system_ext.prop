@@ -2,6 +2,17 @@
 persist.bluetooth.bqr.event_mask=0x8000000E
 persist.bluetooth.bqr.min_interval_ms=60000
 
+# Camera
+persist.camera.privapp.list=com.oplus.camera
+persist.vendor.camera.privapp.list=com.oplus.camera
+ro.oplus.system.camera.name=com.oplus.camera
+ro.oplus.system.camera.flashlight=com.oplus.motor.flashlight
+ro.oplus.camera.video_beauty.prefix=oplus.video.beauty.
+ro.oplus.camera.video.beauty.switch=oplus.switch.video.beauty
+ro.oplus.camera.speechassist=true
+ro.oplus.camera.portrait.center.switch=oplus.switch.portrait.center
+ro.oplus.camera.portrait_center.prefix=oplus.portrait.center.
+
 # Dex2oat
 dalvik.vm.dex2oat64.enabled=true
 

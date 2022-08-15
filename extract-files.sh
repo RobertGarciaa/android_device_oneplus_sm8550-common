@@ -83,6 +83,12 @@ function blob_fixup() {
             sed -i "/NXPLOG_\w\+_LOGLEVEL/ s/0x03/0x02/" "${2}"
             sed -i "s/NFC_DEBUG_ENABLED=1/NFC_DEBUG_ENABLED=0/" "${2}"
             ;;
+        system_ext/etc/camera/mtCalibrationCfg.xml)
+            sed -i "s/-----/--/" "${2}"
+            ;;
+        system_ext/etc/camera/mwCalibrationCfg.xml)
+            sed -i "s/-----/--/" "${2}"
+            ;;
     esac
 }
 
