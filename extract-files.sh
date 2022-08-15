@@ -89,6 +89,12 @@ function blob_fixup() {
         vendor/etc/seccomp_policy/qwesd@2.0.policy)
             echo "pipe2: 1" >> "${2}"
             ;;
+        system_ext/etc/camera/mtCalibrationCfg.xml)
+            sed -i "s/-----/--/" "${2}"
+            ;;
+        system_ext/etc/camera/mwCalibrationCfg.xml)
+            sed -i "s/-----/--/" "${2}"
+            ;;
     esac
 }
 
