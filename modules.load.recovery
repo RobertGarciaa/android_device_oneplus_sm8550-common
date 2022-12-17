@@ -290,3 +290,9 @@ sync_fence.ko
 msm_hw_fence.ko
 msm-mmrm.ko
 hdcp_qseecom_dlkm.ko
+spf_core_dlkm.ko
+gpr_dlkm.ko
+snd_event_dlkm.ko
+q6_notifier_dlkm.ko
+q6_pdr_dlkm.ko
+adsp_loader_dlkm.ko
