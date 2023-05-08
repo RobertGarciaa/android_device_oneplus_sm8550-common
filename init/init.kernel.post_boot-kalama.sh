@@ -113,8 +113,10 @@ echo $silver_early_upmigrate $gold_early_upmigrate > /proc/sys/walt/sched_early_
 echo 325 > /proc/sys/walt/walt_low_latency_task_threshold
 
 # cpuset parameters
-echo 0-2 > /dev/cpuset/background/cpus
+echo 0-1 > /dev/cpuset/background/cpus
+echo 0-2 > /dev/cpuset/restricted/cpus
 echo 0-2 > /dev/cpuset/system-background/cpus
+echo 0-6 > /dev/cpuset/foreground/cpus
 
 # Turn off scheduler boost at the end
 echo 0 > /proc/sys/walt/sched_boost
