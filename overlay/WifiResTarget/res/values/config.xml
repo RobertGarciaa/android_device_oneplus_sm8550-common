@@ -31,4 +31,7 @@
          Note: this is conditional on the device supporting dual concurrent STAs. -->
     <bool name="config_wifiMultiStaRestrictedConcurrencyEnabled">true</bool>
 
+    <!-- Default access point SSID used for tethering -->
+    <string name="wifi_tether_configure_ssid_default" translatable="false">OnePlus 11 5G</string>
+
 </resources>
