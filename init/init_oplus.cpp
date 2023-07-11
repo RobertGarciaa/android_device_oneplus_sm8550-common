@@ -42,6 +42,7 @@ void vendor_load_properties() {
                 OverrideProperty("ro.product.device", "OP591BL1");
                 OverrideProperty("ro.product.vendor.device", "OP591BL1");
                 OverrideProperty("ro.product.product.model", "PHB110");
+                OverrideProperty("persist.vendor.display.pxlw.iris_feature", "0x407f0780");
             } else if (prjname == 22861) { // IN
                 OverrideProperty("ro.product.product.model", "CPH2447");
             }
