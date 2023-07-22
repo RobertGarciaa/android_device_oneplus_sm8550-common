@@ -76,10 +76,16 @@ void vendor_load_properties() {
                 name = "PHB110";
                 model = "PHB110";
                 OverrideProperty("persist.vendor.display.pxlw.iris_feature", "0x407f0780");
+                OverrideProperty("persist.sys.oplus.region", "CN");
+                OverrideProperty("ro.vendor.oplus.regionmark", "CN");
+                OverrideProperty("ro.vendor.oplus.radio.sar_regionmark", "CN");
             } else if (prjname == 22861) { // IN
                 device = "OP594DL1";
                 name = "CPH2447";
                 model = "CPH2447";
+                OverrideProperty("persist.sys.oplus.region", "IN");
+                OverrideProperty("ro.vendor.oplus.regionmark", "IN");
+                OverrideProperty("ro.vendor.oplus.radio.sar_regionmark", "IN");
             }
             break;
         case 22: // EU
@@ -91,6 +97,9 @@ void vendor_load_properties() {
             device = "OP594DL1";
             name = "CPH2451";
             model = "CPH2451";
+            OverrideProperty("persist.sys.oplus.region", "NA");
+            OverrideProperty("ro.vendor.oplus.regionmark", "NA");
+            OverrideProperty("ro.vendor.oplus.radio.sar_regionmark", "NA");
             break;
         default:
             LOG(ERROR) << "Unexpected region ID: " << hw_region_id;
