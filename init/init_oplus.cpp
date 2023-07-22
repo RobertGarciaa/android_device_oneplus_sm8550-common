@@ -5,11 +5,26 @@
 
 #include <android-base/logging.h>
 #include <android-base/properties.h>
+#include <vector>
 
 #define _REALLY_INCLUDE_SYS__SYSTEM_PROPERTIES_H_
 #include <sys/_system_properties.h>
 
 using android::base::GetProperty;
+
+std::vector<std::string> ro_props_default_source_order = {
+    "",
+    "boot.",
+    "bootimage.",
+    "odm.",
+    "odm_dlkm.",
+    "product.",
+    "system.",
+    "system_dlkm.",
+    "system_ext.",
+    "vendor.",
+    "vendor_dlkm."
+};
 
 /*
  * SetProperty does not allow updating read only properties and as a result
@@ -27,33 +42,61 @@ void OverrideProperty(const char* name, const char* value) {
     }
 }
 
+void set_ro_build_prop(const std::string &prop, const std::string &value, bool product = true) {
+    std::string prop_name;
+
+    for (const auto &source : ro_props_default_source_order) {
+        if (product) {
+            prop_name = "ro.product." + source + prop;
+        } else {
+            prop_name = "ro." + source + "build." + prop;
+        }
+
+        OverrideProperty(prop_name.c_str(), value.c_str());
+    }
+}
+
 /*
  * Only for read-only properties. Properties that can be wrote to more
  * than once should be set in a typical init script (e.g. init.oplus.hw.rc)
  * after the original property has been set.
  */
 void vendor_load_properties() {
+    std::string model;
+    std::string device;
+    std::string name;
+
     auto hw_region_id = std::stoi(GetProperty("ro.boot.hw_region_id", "0"));
     auto prjname = std::stoi(GetProperty("ro.boot.prjname", "0"));
 
     switch (hw_region_id) {
         case 21: // CN_IN
             if (prjname == 22811) { // CN
-                OverrideProperty("ro.product.device", "OP591BL1");
-                OverrideProperty("ro.product.vendor.device", "OP591BL1");
-                OverrideProperty("ro.product.product.model", "PHB110");
+                device = "OP591BL1";
+                name = "PHB110";
+                model = "PHB110";
                 OverrideProperty("persist.vendor.display.pxlw.iris_feature", "0x407f0780");
             } else if (prjname == 22861) { // IN
-                OverrideProperty("ro.product.product.model", "CPH2447");
+                device = "OP594DL1";
+                name = "CPH2447";
+                model = "CPH2447";
             }
             break;
         case 22: // EU
-            OverrideProperty("ro.product.product.model", "CPH2449");
+            device = "OP594DL1";
+            name = "CPH2449";
+            model = "CPH2449";
             break;
         case 23: // NA
-            OverrideProperty("ro.product.product.model", "CPH2451");
+            device = "OP594DL1";
+            name = "CPH2451";
+            model = "CPH2451";
             break;
         default:
             LOG(ERROR) << "Unexpected region ID: " << hw_region_id;
     }
+    set_ro_build_prop("device", device);
+    set_ro_build_prop("model", model);
+    set_ro_build_prop("name", name);
+    set_ro_build_prop("product", model, false);
 }
