@@ -56,6 +56,10 @@ void set_ro_build_prop(const std::string &prop, const std::string &value, bool p
     }
 }
 
+bool IsRecoveryMode() {
+    return access("/system/bin/recovery", F_OK) == 0;
+}
+
 /*
  * Only for read-only properties. Properties that can be wrote to more
  * than once should be set in a typical init script (e.g. init.oplus.hw.rc)
@@ -109,4 +113,8 @@ void vendor_load_properties() {
     set_ro_build_prop("name", name);
     set_ro_build_prop("product", model, false);
     set_ro_build_prop("marketname", "OnePlus 11 5G");
+
+    if (!IsRecoveryMode()) {
+        OverrideProperty("ro.product.first_api_level", "32");
+    }
 }
