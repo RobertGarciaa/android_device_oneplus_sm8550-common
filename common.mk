@@ -93,7 +93,7 @@ PRODUCT_PACKAGES += \
 TARGET_ENABLE_BLUR := true
 
 # Camera
-$(call inherit-product, vendor/oneplus/camera/camera-vendor.mk)
+#$(call inherit-product, vendor/oneplus/camera/camera-vendor.mk)
 
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.camera.concurrent.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.concurrent.xml \
