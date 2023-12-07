@@ -24,7 +24,6 @@ gpucc-kalama.ko
 haptic.ko
 hdmi_dlkm.ko
 horae_shell_temp.ko
-hung_task_enh.ko
 hvc_gunyah.ko
 i3c-master-msm-geni.ko
 ipa_clientsm.ko
