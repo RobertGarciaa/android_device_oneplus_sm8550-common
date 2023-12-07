@@ -58,7 +58,6 @@ spcom.ko
 msm_performance.ko
 qcom_va_minidump.ko
 qbt_handler.ko
-hung_task_enh.ko
 oplus_sensor.ko
 ssc_interact.ko
 oplus_bsp_sensor_feedback.ko
