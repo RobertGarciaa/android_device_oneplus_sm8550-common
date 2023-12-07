@@ -108,4 +108,5 @@ void vendor_load_properties() {
     set_ro_build_prop("model", model);
     set_ro_build_prop("name", name);
     set_ro_build_prop("product", model, false);
+    set_ro_build_prop("marketname", "OnePlus 11 5G");
 }
