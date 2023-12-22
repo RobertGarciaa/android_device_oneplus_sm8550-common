@@ -27,7 +27,7 @@
   },
   {
     "repository": "crdroidandroid/android_vendor_oneplus-firmware",
-    "target_path": "vendor/oneplus-firmware",
+    "target_path": "vendor/oneplus/firmware",
     "remote": "crdroid-gitlab"
   }
 ]
