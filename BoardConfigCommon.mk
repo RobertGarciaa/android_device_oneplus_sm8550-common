@@ -43,7 +43,6 @@ AB_OTA_PARTITIONS += \
     hyp \
     imagefv \
     keymaster \
-    modem \
     oplus_sec \
     oplusstanvbk \
     qupfw \
