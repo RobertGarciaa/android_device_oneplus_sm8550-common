@@ -63,7 +63,7 @@ persist.vendor.qcom.bluetooth.aptxadaptiver2_1_support=true
 ro.bluetooth.a2dp_offload.supported=true
 
 # Camera
-persist.vendor.camera.privapp.list=org.lineageos.aperture,com.oplus.camera
+persist.vendor.camera.privapp.list=org.lineageos.aperture,com.oplus.camera,com.ss.android.ugc.aweme,org.codeaurora.snapcam
 vendor.camera.aux.packageexcludelist=org.telegram.messenger,org.thunderdog.challegram,us.zoom.videomeetings
 vendor.camera.algo.jpeghwencode=0
 vendor.camera.aux.packagelist=com.oplus.camera
