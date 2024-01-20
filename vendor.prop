@@ -148,6 +148,9 @@ ro.surface_flinger.wcg_composition_dataspace=143261696
 # Incremental FS
 ro.incremental.enable=yes
 
+# Logs
+persist.log.tag.OpenGLRenderer=S
+
 # Media
 debug.c2.use_dmabufheaps=1
 debug.stagefright.c2inputsurface=-1
