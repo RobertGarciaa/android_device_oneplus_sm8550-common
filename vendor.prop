@@ -147,6 +147,9 @@ ro.incremental.enable=yes
 # Keystore
 ro.hardware.keystore_desede=true
 
+# Logs
+persist.log.tag.OpenGLRenderer=S
+
 # Media
 debug.c2.use_dmabufheaps=1
 debug.stagefright.c2inputsurface=-1
