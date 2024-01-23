@@ -565,6 +565,7 @@ public interface IWindowManager {
                 return null;
             }
 
+            @Override
             public void onOverlayChanged() {
             }
         };
