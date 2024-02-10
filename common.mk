@@ -409,7 +409,8 @@ PRODUCT_COPY_FILES += \
 # VINTF
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += \
     hardware/oplus/vintf/device_framework_matrix.xml \
-    hardware/qcom-caf/common/vendor_framework_compatibility_matrix.xml
+    hardware/qcom-caf/common/vendor_framework_compatibility_matrix.xml \
+    device/oneplus/sm8550-common/framework_matrix.xml
 DEVICE_FRAMEWORK_MANIFEST_FILE += device/oneplus/sm8550-common/vintf/framework_manifest.xml
 DEVICE_MATRIX_FILE := hardware/qcom-caf/common/compatibility_matrix.xml
 DEVICE_MANIFEST_FILE := \
