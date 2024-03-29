@@ -6673,4 +6673,21 @@
             <item value="311370" />
         </string-array>
     </carrier_config>
+    
+    <!--韩国 KR SKT-->
+    <carrier_config mcc="450" mnc="05">
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="true" />
+    </carrier_config>
+    <!--韩国 KR LGU+-->
+    <carrier_config mcc="450" mnc="06">
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="true" />
+    </carrier_config>
+    <!--韩国 KR KT-->
+    <carrier_config mcc="450" mnc="08">
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="true" />
+        
+    </carrier_config>
 </carrier_config_list>
