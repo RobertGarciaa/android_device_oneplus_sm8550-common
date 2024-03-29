@@ -1418,7 +1418,9 @@
         <boolean name="carrier_allow_turnoff_ims_bool" value="false" />
         <boolean name="allow_hold_call_during_emergency_bool" value="false" />
     </carrier_config>
+    <!--韩国 KR SKT-->
     <carrier_config mcc="450" mnc="05">
+        <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_vt_available_bool" value="true" />
         <boolean name="allow_video_call_in_low_battery" value="false" />
         <boolean name="config_carrier_cs_retry_available" value="true" />
@@ -1426,7 +1428,34 @@
         <boolean name="carrier_allow_turnoff_ims_bool" value="false" />
         <boolean name="allow_hold_call_during_emergency_bool" value="false" />
     </carrier_config>
+    <carrier_config mcc="450" mnc="05">
+        <boolean name="hide_ims_apn_bool" value="false" />
+        <int name="smsToMmsTextThreshold" value="1" />
+        <boolean name="allow_video_call_in_low_battery" value="true" />
+        <int name="maxMessageSize" value="950000" />
+        <boolean name="groupChatDefaultsToMMS" value="false" />
+        <boolean name="identify_high_definition_calls_in_call_log_bool" value="true" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="true" />
+        <boolean name="editable_enhanced_4g_lte_bool" value="false" />
+        <boolean name="allow_hold_video_call_bool" value="false" />
+        <string-array name="carrier_metered_apn_types_strings" num="3">
+            <item value="default" />
+            <item value="dun" />
+            <item value="supl" />
+        </string-array>
+        <string-array name="carrier_metered_roaming_apn_types_strings" num="3">
+            <item value="default" />
+            <item value="dun" />
+            <item value="supl" />
+        </string-array>
+        <boolean name="config_support_add_call_during_ims_call" value="false" />
+        <int name="config_nr_display_rule" value="4" />
+        <int name="config_nr_display_timer1" value="11" />
+        <int name="config_nr_display_timer2" value="3" />
+    </carrier_config>
+    <!--韩国 KR LGU+-->
     <carrier_config mcc="450" mnc="06">
+        <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_vt_available_bool" value="true" />
         <boolean name="allow_video_call_in_low_battery" value="false" />
         <boolean name="support_adhoc_conference_calls_bool" value="true" />
@@ -1434,12 +1463,76 @@
         <boolean name="carrier_allow_turnoff_ims_bool" value="false" />
         <boolean name="allow_hold_call_during_emergency_bool" value="false" />
     </carrier_config>
+    <carrier_config mcc="450" mnc="06">
+        <boolean name="hide_ims_apn_bool" value="false" />
+        <int name="smsToMmsTextThreshold" value="1" />
+        <boolean name="allow_video_call_in_low_battery" value="true" />
+        <int name="maxMessageSize" value="950000" />
+        <boolean name="groupChatDefaultsToMMS" value="false" />
+        <boolean name="identify_high_definition_calls_in_call_log_bool" value="true" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="true" />
+        <boolean name="editable_enhanced_4g_lte_bool" value="false" />
+        <boolean name="allow_hold_video_call_bool" value="false" />
+        <string-array name="carrier_metered_apn_types_strings" num="3">
+            <item value="default" />
+            <item value="dun" />
+            <item value="supl" />
+        </string-array>
+        <string-array name="carrier_metered_roaming_apn_types_strings" num="3">
+            <item value="default" />
+            <item value="dun" />
+            <item value="supl" />
+        </string-array>
+        <boolean name="config_support_add_call_during_ims_call" value="false" />
+        <int name="config_nr_display_rule" value="4" />
+        <int name="config_nr_display_timer1" value="11" />
+        <int name="config_nr_display_timer2" value="3" />
+    </carrier_config>
+    <carrier_config mcc="450" mnc="6">
+        <int name="smsToMmsTextLengthThreshold" value="-1" />
+        <boolean name="call_forwarding_visibility_bool" value="false" />
+        <boolean name="additional_settings_call_waiting_visibility_bool" value="false" />
+        <boolean name="allow_hold_in_ims_call" value="false" />
+        <int name="config_nr_display_rule" value="4" />
+        <int name="config_nr_display_timer1" value="11" />
+        <int name="config_nr_display_timer2" value="11" />
+    </carrier_config>
+    <carrier_config cust_region="kr_lgu" mcc="450" mnc="6">
+        <boolean name="allow_adding_apns_bool" value="false" />
+    </carrier_config>
+    <!--韩国 KR KT-->
     <carrier_config mcc="450" mnc="08">
+        <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_vt_available_bool" value="true" />
         <boolean name="allow_video_call_in_low_battery" value="false" />
         <boolean name="config_carrier_cs_retry_available" value="true" />
         <boolean name="carrier_allow_turnoff_ims_bool" value="false" />
         <boolean name="allow_hold_call_during_emergency_bool" value="false" />
+    </carrier_config>
+    <carrier_config mcc="450" mnc="08">
+        <boolean name="hide_ims_apn_bool" value="false" />
+        <int name="smsToMmsTextThreshold" value="1" />
+        <boolean name="allow_video_call_in_low_battery" value="true" />
+        <int name="maxMessageSize" value="950000" />
+        <boolean name="groupChatDefaultsToMMS" value="false" />
+        <boolean name="identify_high_definition_calls_in_call_log_bool" value="true" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="true" />
+        <boolean name="editable_enhanced_4g_lte_bool" value="false" />
+        <boolean name="allow_hold_video_call_bool" value="false" />
+        <string-array name="carrier_metered_apn_types_strings" num="3">
+            <item value="default" />
+            <item value="dun" />
+            <item value="supl" />
+        </string-array>
+        <string-array name="carrier_metered_roaming_apn_types_strings" num="3">
+            <item value="default" />
+            <item value="dun" />
+            <item value="supl" />
+        </string-array>
+        <boolean name="config_support_add_call_during_ims_call" value="false" />
+        <int name="config_nr_display_rule" value="4" />
+        <int name="config_nr_display_timer1" value="11" />
+        <int name="config_nr_display_timer2" value="3" />
     </carrier_config>
     <carrier_config mcc="454" mnc="00">
         <boolean name="carrier_volte_available_bool" value="true" />
