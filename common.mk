@@ -112,7 +112,7 @@ PRODUCT_PACKAGES += \
 TARGET_ENABLE_BLUR := true
 
 # Camera
-#$(call inherit-product, vendor/oneplus/camera/camera-vendor.mk)
+$(call inherit-product, vendor/oneplus/camera/camera-vendor.mk)
 
 PRODUCT_PACKAGES += \
     android.frameworks.cameraservice.common@2.0.vendor \
