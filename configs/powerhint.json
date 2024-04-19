@@ -336,6 +336,14 @@
         ""
       ],
       "Type": "Property"
+    },
+    {
+      "Name": "DoubleTapToWake",
+      "Path": "/proc/touchpanel/double_tap_enable",
+      "Values": [
+        "1",
+        "0"
+      ]
     }
   ],
   "Actions": [
@@ -638,6 +646,12 @@
       "Node": "CPUBigClusterMaxFreq",
       "Duration": 0,
       "Value": "1056000"
+    },
+    {
+      "PowerHint": "DOUBLE_TAP_TO_WAKE",
+      "Node": "DoubleTapToWake",
+      "Duration": 0,
+      "Value": "1"
     }
   ]
 }
