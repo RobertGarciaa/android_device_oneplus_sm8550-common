@@ -784,7 +784,6 @@ vendor/etc/msm_irqbalance.conf
 
 # Kernel
 vendor/bin/init.qcom.class_core.sh
-vendor/bin/init.qcom.post_boot.sh
 vendor/bin/init.qti.kernel.sh
 vendor/bin/system_dlkm_modprobe.sh
 vendor/bin/vendor_modprobe.sh
