@@ -288,6 +288,9 @@ PRODUCT_PACKAGES += \
     libqti-perfd-client \
     liboplus-uah-client
 
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
+
 # QSPA
 PRODUCT_PACKAGES += \
     qspa_vendor.rc \
