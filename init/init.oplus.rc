@@ -8,12 +8,6 @@ on fs
     # Update touchpanel firmware in case we ship newer firmware in /odm
     write /proc/touchpanel/tp_fw_update 0
 
-    # Camera
-    mkdir /mnt/vendor/dsp 0770 root root
-    copy /vendor/dsp/cdsp/fastrpc_shell_3 /mnt/vendor/dsp/fastrpc_shell_3
-    chmod 0644 /mnt/vendor/dsp/fastrpc_shell_3
-    mount none /mnt/vendor/dsp/fastrpc_shell_3 /vendor/dsp/cdsp/fastrpc_shell_3 bind
-
 on boot
     # Camera
     chown cameraserver cameraserver /sys/kernel/ois_control/dump_registers
@@ -31,6 +25,12 @@ on boot
     chown system system /sys/devices/platform/soc/soc:sensor_fb/adsp_notify
 
 on post-fs-data
+    # Camera
+    mkdir /mnt/vendor/dsp 0770 root root
+    copy /vendor/dsp/cdsp/fastrpc_shell_3 /mnt/vendor/dsp/fastrpc_shell_3
+    chmod 0644 /mnt/vendor/dsp/fastrpc_shell_3
+    mount none /mnt/vendor/dsp/fastrpc_shell_3 /vendor/dsp/cdsp/fastrpc_shell_3 bind
+
     # ADSP ramdump
     mkdir /data/vendor/mmdump 0777 system system
     chmod 0777 /data/vendor/mmdump
