@@ -1741,7 +1741,6 @@ odm/bin/hw/vendor.oplus.hardware.biometrics.fingerprint@2.1-service_uff|c8031f17
 odm/etc/init/vendor.oplus.hardware.biometrics.fingerprint@2.1-service.rc|fb6116702903de0122eb00af471481ef1a65fe32
 odm/etc/vintf/manifest/manifest_oplus_fingerprint.xml|78ca4f56ed1f5dd48c186718718fd9513629851e
 odm/lib64/libolc_vnd.so
-odm/lib64/vendor.oplus.hardware.biometrics.fingerprint@2.1.so
 odm/lib64/vendor.oplus.hardware.commondcs-V1-ndk.so
 odm/lib64/vendor.oplus.hardware.olc2-V1-ndk.so
 odm/lib64/vendor.oplus.hardware.touch-V1-ndk.so
