@@ -141,8 +141,6 @@ vendor/lib64/libcapiv2uvvendor.so
 vendor/lib64/libdsd2pcm.so
 vendor/lib64/libeai_fixed.so
 vendor/lib64/libeai_float.so
-vendor/lib64/libfmpal.so
-vendor/lib64/libhfp_pal.so
 vendor/lib64/liblistensoundmodel2vendor.so
 vendor/lib64/liblx-ar_util.so
 -vendor/lib64/liblx-osal.so

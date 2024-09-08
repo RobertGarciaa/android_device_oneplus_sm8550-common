@@ -53,6 +53,8 @@ PRODUCT_PACKAGES += \
     libagm_pcm_plugin \
     libaudioroute.vendor \
     libbatterylistener \
+    libfmpal \
+    libhfp_pal \
     libqcompostprocbundle \
     libqcomvisualizer \
     libqcomvoiceprocessing \
