@@ -2021,6 +2021,21 @@ vendor/lib64/libqconfigclient.so
 vendor/lib64/qti.video.utils.videobufferlayout.so
 vendor/lib64/vendor.qti.hardware.qconfig@1.0.so
 
+# Media (Dolby) - from Moto G2
+vendor/bin/hw/vendor.dolby.hardware.dms@2.0-service|8215768638794162db3bb76e43045926fcbb4b0b
+vendor/etc/init/vendor.dolby.hardware.dms@2.0-service.rc|29296ebfe89b2697fec573be73cc3757fd97bed6
+vendor/etc/media_codecs_dolby_audio.xml|a794eb15fc198d0285510260025cd99b53fa174f
+vendor/lib64/soundfx/libswdap.so|e996ee1d421b3b2cf74f3f3ed93bff067d83dddb
+vendor/lib64/soundfx/libswgamedap.so|c898fd5b51312c5fafa693ca037423c5bae23101
+vendor/lib64/soundfx/libswvqe.so|08394e1ac285479213604c35cb144147fdac68c0
+vendor/lib64/libdapparamstorage.so|7549aeba2b7041b472ffc1f5fd39a56e4be64a2b
+vendor/lib64/libdeccfg.so|3a63582be7dea50ae10c0543f68e3bce592a3877
+vendor/lib64/libdlbdsservice.so|8d070318884f02e50ad1831bb29f8bde6af33168
+vendor/lib64/libstagefright_soft_ac4dec.so|d8d2dd47ca0552d4e1c5df7ad9b3becfd6d43179
+vendor/lib64/libstagefright_soft_ddpdec.so|9f921ef725bdd1edc26b484df86b10e2909f760b
+vendor/lib64/vendor.dolby.hardware.dms@2.0.so|a93b5cf33ae57387a2d32686520a0d1dd5d10dcc
+vendor/lib64/vendor.dolby.hardware.dms@2.0-impl.so|92eb0a2b730810881288119fc4d038f52870acd1
+
 # MMI
 vendor/bin/hw/vendor.qti.hardware.factory@1.0-service
 vendor/bin/mmid
