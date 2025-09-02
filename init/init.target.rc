@@ -109,6 +109,9 @@ on boot
     chown system /sys/devices/system/cpu/hyp_core_ctl/enable
     chown system /sys/devices/system/cpu/hyp_core_ctl/hcc_min_freq
 
+    chown system system /sys/kernel/oplus_display/adfr_config
+    chmod 0660 /sys/kernel/oplus_display/adfr_config
+
 on property:vendor.display.lcd_density=560
    setprop dalvik.vm.heapgrowthlimit 256m
 
