@@ -15,6 +15,11 @@ on boot
     # Display
     chmod 0000 /sys/kernel/oplus_display/hbm
 
+on boot
+    # Tap to wake node
+    chown system system /proc/touchpanel/double_tap_enable
+    chmod 0660 /proc/touchpanel/double_tap_enable
+
 on post-fs-data
     # ADSP ramdump
     mkdir /data/vendor/mmdump 0777 system system
