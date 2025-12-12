@@ -38,7 +38,6 @@ mhi_dev_uci.ko
 microdump_collector.ko
 msm_drm.ko
 msm_geni_serial.ko
-msm_lmh_dcvs.ko
 msm_memshare.ko
 msm_sharedmem.ko
 msm_show_epoch.ko
