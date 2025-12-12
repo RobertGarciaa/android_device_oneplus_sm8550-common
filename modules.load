@@ -50,7 +50,6 @@ msm_drm.ko
 msm-eva.ko
 msm_geni_serial.ko
 msm_kgsl.ko
-msm_lmh_dcvs.ko
 msm_memshare.ko
 msm_sharedmem.ko
 msm_show_epoch.ko
