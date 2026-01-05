@@ -1,9 +1,10 @@
 #
-# Copyright (C) 2022-2025 The LineageOS Project
+# Copyright (C) 2022-2026 The LineageOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
 
+import /odm/etc/init/hw/init.explorer.rc
 import /odm/etc/init/hw/init.oplus.display.rc
 
 on fs
