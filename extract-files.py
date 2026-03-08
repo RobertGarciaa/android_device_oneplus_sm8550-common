@@ -74,7 +74,7 @@ blob_fixups: blob_fixups_user_type = {
         .replace_needed('libtinyxml2.so', 'libtinyxml2-v34.so'),
     'odm/bin/hw/vendor.oplus.hardware.biometrics.fingerprint@2.1-service_uff': blob_fixup()
         .add_needed('libshims_aidl_fingerprint_v2.oplus.so'),
-    'odm/bin/hw/vendor.oplus.hardware.charger-V9-service': blob_fixup()
+    'odm/bin/hw/vendor.oplus.hardware.charger-V10-service': blob_fixup()
         .add_needed('libbase_shim.so'),
     'odm/etc/init/init.network.rc': blob_fixup()
         .regex_replace(r'/\* (Huo\.Chen@SYSTEM\.RF, 2024/09/06, Add for ICC) \*/', r'# \1'),
