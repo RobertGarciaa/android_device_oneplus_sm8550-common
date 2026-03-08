@@ -1,5 +1,5 @@
 ## All proprietary files from this list, unless pinned and noted otherwise,
-## are from OnePlus 11 5G (CPH2449_16.0.2.400(EX01)).
+## are from OnePlus 11 5G (CPH2449_16.0.3.500(EX01)).
 
 # ACDBs
 vendor/etc/acdbdata/ffv_models/ffv__5.0.1_0.1__3.0.0_0.0__eai_2.10_enpu3.pmd
@@ -921,8 +921,8 @@ vendor/lib64/libqnnengine.so
 
 # OPLUS Charger
 odm/bin/hw/gauged
-odm/bin/hw/vendor.oplus.hardware.charger-V9-service
-odm/etc/init/vendor.oplus.hardware.charger-V9-service.rc
+odm/bin/hw/vendor.oplus.hardware.charger-V10-service
+odm/etc/init/vendor.oplus.hardware.charger-V10-service.rc
 odm/etc/vintf/manifest/manifest_oplus_charger_aidl.xml
 odm/etc/charge.cfg
 odm/lib64/libGaiaClient_vnd.so
