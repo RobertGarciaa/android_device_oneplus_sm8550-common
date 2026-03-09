@@ -488,10 +488,6 @@ odm/bin/hw/vendor.oplus.hardware.esim@1.0-service
 odm/etc/init/esim@1.0-service.rc
 odm/etc/vintf/manifest/manifest_oplus_esim.xml
 
-# eUICC
-my_product/etc/permissions/EuiccGoogle_grant_permissions_list.xml:product/etc/permissions/privapp-permissions-euiccgoogle.xml
-my_product/priv-app/EuiccGoogle/EuiccGoogle.apk:product/priv-app/EuiccGoogle/EuiccGoogle.apk;PRESIGNED
-
 # EVA
 vendor/etc/eva/facedetection/model3.dat
 vendor/lib64/libcv_common.so
