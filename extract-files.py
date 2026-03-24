@@ -108,6 +108,15 @@ blob_fixups: blob_fixups_user_type = {
         .add_needed('libcodec2_shim.so'),
     'vendor/lib64/vendor.libdpmframework.so': blob_fixup()
         .add_needed('libhidlbase_shim.so'),
+    'vendor/etc/seccomp_policy/qspm.policy': blob_fixup()
+        .regex_replace('sigreturn: 1\\n', '')
+        .regex_replace('geteuid32: 1\\n', '')
+        .regex_replace('getgid32: 1\\n', '')
+        .regex_replace('getegid32: 1\\n', '')
+        .regex_replace('getgroups32: 1\\n', '')
+        .regex_replace('mprotect: 1\\n', '')
+        .regex_replace('fstat: 1\\n', '')
+        .regex_replace('gettimeofday: 1\\n', 'gettimeofday: 1\\nmprotect: 1\\nfstat: 1\\nsendto: 1\\n'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
