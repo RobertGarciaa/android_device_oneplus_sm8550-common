@@ -117,6 +117,17 @@ blob_fixups: blob_fixups_user_type = {
         .regex_replace('mprotect: 1\\n', '')
         .regex_replace('fstat: 1\\n', '')
         .regex_replace('gettimeofday: 1\\n', 'gettimeofday: 1\\nmprotect: 1\\nfstat: 1\\nsendto: 1\\n'),
+    'vendor/etc/init/vendor.qti.media.c2@1.0-service.rc': blob_fixup()
+        .regex_replace('group mediadrm camera drmrpc system', 'group mediadrm camera drmrpc system audio')
+        .regex_replace('writepid /dev/cpuset/foreground/tasks', 'task_profiles ProcessCapacityHigh')
+        .add_line_if_missing('    interface android.hardware.media.c2@1.0::IComponentStore default')
+        .add_line_if_missing('    interface android.hardware.media.c2@1.0::IComponentStore software')
+        .add_line_if_missing('    onrestart restart mediaserver'),
+    'vendor/etc/init/vendor.qti.media.c2audio@1.0-service.rc': blob_fixup()
+        .regex_replace('group mediadrm camera drmrpc system', 'group mediadrm camera drmrpc system audio')
+        .regex_replace('writepid /dev/cpuset/foreground/tasks', 'task_profiles ProcessCapacityHigh')
+        .add_line_if_missing('    interface android.hardware.media.c2@1.0::IComponentStore default2')
+        .add_line_if_missing('    onrestart restart mediaserver'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
