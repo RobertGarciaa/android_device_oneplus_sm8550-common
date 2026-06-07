@@ -1,5 +1,5 @@
 ## All proprietary files from this list, unless pinned and noted otherwise,
-## are from OnePlus 11 5G (CPH2449_16.0.5.702(EX01)).
+## are from OnePlus 11 5G (PHB110_16.0.5.701(CN01)).
 
 # ACDBs
 vendor/etc/acdbdata/ffv_models/ffv__5.0.1_0.1__3.0.0_0.0__eai_2.10_enpu3.pmd
@@ -482,11 +482,6 @@ vendor/lib64/hw/vendor.qti.esepowermanager@1.1-impl.so;MODULE_SUFFIX=_vendor
 vendor/lib64/libesepmconfig.so
 vendor/lib64/vendor.qti.esepowermanager@1.0.so;MODULE_SUFFIX=_vendor
 vendor/lib64/vendor.qti.esepowermanager@1.1.so;MODULE_SUFFIX=_vendor
-
-# eSIM
-odm/bin/hw/vendor.oplus.hardware.esim@1.0-service
-odm/etc/init/esim@1.0-service.rc
-odm/etc/vintf/manifest/manifest_oplus_esim.xml
 
 # EVA
 vendor/etc/eva/facedetection/model3.dat
