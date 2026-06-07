@@ -292,13 +292,13 @@ vendor/etc/init/ssgtzd.rc
 vendor/etc/seccomp_policy/qwesd@2.0.policy
 vendor/etc/ssg/tz_whitelist.json
 
-# Context Hub
-odm/etc/init/android.hardware.contexthub-service.qmi.rc
-odm/etc/permissions/android.hardware.context_hub.xml
-odm/etc/vintf/manifest/android.hardware.contexthub-service.qmi.xml
-vendor/bin/hw/android.hardware.contexthub-service.qmi
-vendor/etc/chre/preloaded_nanoapps.json
-vendor/etc/init/android.hardware.contexthub-service.qmi.rc
+# Context Hub - from "CPH2449_16.0.5.702"
+odm/etc/init/android.hardware.contexthub-service.qmi.rc|90b96d761f38153b30ffb33b8bb9192129e27fb9
+odm/etc/permissions/android.hardware.context_hub.xml|1f79d94b28b897cedf4c2731ab01a783a56a9a34
+odm/etc/vintf/manifest/android.hardware.contexthub-service.qmi.xml|8bb733d635b5447f0c915a0c8e209a8a503ae615
+vendor/bin/hw/android.hardware.contexthub-service.qmi|b429673310d1d86c470c9587445517ab043ace24
+vendor/etc/chre/preloaded_nanoapps.json|508b804635933b123a40882f84bfd4aeaf5dc151
+vendor/etc/init/android.hardware.contexthub-service.qmi.rc|da39a3ee5e6b4b0d3255bfef95601890afd80709
 
 # Data
 vendor/bin/ATFWD-daemon
@@ -673,11 +673,11 @@ system_ext/etc/horae/horae.conf
 system_ext/etc/horae/horae_SM8550.conf
 system_ext/etc/init/horae.rc
 
-# Hotword Enrollment
-my_product/etc/sysconfig/com.android.hotwordenrollment.common.util.xml:product/etc/sysconfig/com.android.hotwordenrollment.common.util.xml
-my_product/framework/com.android.hotwordenrollment.common.util.jar:product/framework/com.android.hotwordenrollment.common.util.jar
-my_product/priv-app/HotwordEnrollmentXGoogleHEXAGON_WIDEBAND.apk:product/priv-app/HotwordEnrollmentXGoogleHEXAGON_WIDEBAND/HotwordEnrollmentXGoogleHEXAGON_WIDEBAND.apk
-my_product/priv-app/HotwordEnrollmentYGoogleHEXAGON_WIDEBAND.apk:product/priv-app/HotwordEnrollmentYGoogleHEXAGON_WIDEBAND/HotwordEnrollmentYGoogleHEXAGON_WIDEBAND.apk
+# Hotword Enrollment - from "CPH2449_16.0.5.702"
+my_product/etc/sysconfig/com.android.hotwordenrollment.common.util.xml:product/etc/sysconfig/com.android.hotwordenrollment.common.util.xml|dce101edaf6acb2e6384be094f743bf95a346a3d
+my_product/framework/com.android.hotwordenrollment.common.util.jar:product/framework/com.android.hotwordenrollment.common.util.jar|2f9d61fcdbc33058e8a514b4b5a559d314bbabaf
+my_product/priv-app/HotwordEnrollmentXGoogleHEXAGON_WIDEBAND.apk:product/priv-app/HotwordEnrollmentXGoogleHEXAGON_WIDEBAND/HotwordEnrollmentXGoogleHEXAGON_WIDEBAND.apk|e37e5c51144d700b37627c907541b2d8b23e085a
+my_product/priv-app/HotwordEnrollmentYGoogleHEXAGON_WIDEBAND.apk:product/priv-app/HotwordEnrollmentYGoogleHEXAGON_WIDEBAND/HotwordEnrollmentYGoogleHEXAGON_WIDEBAND.apk|eb9b3c74fd190c2326a341e315461634b3d83490
 
 # IMS
 system/lib64/vendor.qti.diaghal-V1-ndk.so
